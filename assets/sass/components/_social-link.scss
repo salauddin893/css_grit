@@ -1,0 +1,16 @@
+// Social Link Horizantal
+.social-link{
+  ul{
+    margin-bottom: 10px;
+    li{
+      display: inline-block;
+      a{
+        margin-right: 20px;
+        color: #505359;
+        @include hover{
+          color: $red;
+        }
+      }
+    }
+  }
+}

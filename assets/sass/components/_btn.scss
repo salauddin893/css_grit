@@ -1,0 +1,131 @@
+/*--------------------------------------
+	- Button
+----------------------------------------*/
+.btn {
+	@include btn($fs: 16px, $fw: 500, $radius: 50px, $py: 17px, $px: 35px);
+}
+
+.btn-blue{
+	@include btn-color($theme-color, $global-color);
+	border: 1px solid transparent;
+	span{
+		color: $white;
+	}
+	@include hover{
+		background-color: transparent;
+		color: $theme-color;
+		border: 1px solid $theme-color;
+		span{
+			color: $theme-color;
+		}
+	}
+}
+
+.btn-blue-2{
+	@include btn-color($blue-2, $white);
+	margin-bottom: -6px;
+	border: 1px solid transparent;
+
+	@include hover{
+		border: 1px solid $theme-color;
+		color: $theme-color !important;
+		background-color: transparent;
+	}
+}
+
+.btn-blue-3{
+	@include btn-color($blue-2, $white);
+	margin-bottom: -6px;
+	border: 1px solid transparent;
+
+	@include hover{
+		border: 1px solid $white;
+		color: $white !important;
+		background-color: transparent;
+	}
+}
+
+.btn-theme{
+	@include gradient($btn-gr);
+	position: relative;
+	z-index: 1;
+	margin-bottom: -6px;
+	background-size: 200% auto;
+	transition: .3s;
+
+	@include hover{
+		background-position: right center;
+	}
+}
+
+.btn-sent{
+	@include btn-color($white, $black);
+	transition: .3s;
+	cursor: pointer;
+
+	@include hover{
+		@include btn-color($theme-color, $white);
+	}
+}
+
+.btn-red{
+	@include btn-color($red-ling, $red);
+	
+	@include hover{
+		@include btn-color($red, $white);
+	}
+}
+
+.btn-skil{
+	@include btn-color(#f2ebff, $theme-color);
+
+	@include hover{
+		@include btn-color($theme-color, $white);
+	}
+}
+
+.btn-white {
+	@include btn-color($white, $global-color);
+	color: $global-color !important;
+	border: 1px solid transparent;
+
+	@include hover{
+		@include btn-color(transparent, $white);
+		border: 1px solid $white;
+		color: $white !important;
+	}
+}
+
+.b-r-none{
+	border-radius: 0px;
+}
+
+.btn-price{
+	@include gradient($price-btn-gr);
+	background-size: 200% auto;
+	transition: .3s;
+
+	@include hover{
+		background-position: right center;
+	}
+}
+
+.btn-overlay{
+	@include btn-color(transparent, $global-color);
+	border: 1px solid #efe2e2;
+
+	@include hover{
+		@include btn-color($theme-color, $white);
+		border-color: $theme-color;
+	}
+}
+
+.btn-overlay-2{
+	@include btn-color($white, $global-color);
+	border: 1px solid #efe2e2;
+
+	@include hover{
+		@include btn-color($theme-color, $white);
+		border-color: $theme-color;
+	}
+}

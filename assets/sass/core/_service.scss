@@ -1,0 +1,46 @@
+/*----------------------------------------*/
+/* Service Section Area
+/*----------------------------------------*/
+.service-area{
+    .service-box{
+        @include prefixed(transition, 0.3s ease-out);
+        border-radius: 10px;
+        &:hover{
+            box-shadow: 0 10px 45px 0px rgba(0,0,0,0.29);
+        }
+    }
+    .service-icon{
+        span{
+            display: block;
+            @include size(70px);
+            @include gradient($red-gr);
+            border-radius: 50%;
+            margin: 0 auto;
+            font-size: 25px;
+            color: $white;
+            margin-bottom: 25px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &-2 span{
+            @include gradient($blue-gr);
+        }
+        &-3 span{
+            @include gradient($btn-gr);
+        }
+        &-shap{
+            @include absolute(top 0px left 50%);
+            width: 150px;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+    .service-content{
+        h4{
+            font-family: $roboto;
+        }
+    }
+}

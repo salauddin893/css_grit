@@ -1,0 +1,65 @@
+.hamburger-menu {
+  margin-top: 30px;
+  padding: 20px;
+  
+  @include nav($li: block, $color: $white, $px: 10px, $py: 15px, $h-color: $white, $h-bg: #14516C);
+}
+
+.hamburger-icon {
+  cursor: pointer;
+}
+
+/* header-extra-info */
+.extra-info {
+  background: rgba($color: #152136, $alpha: 0.8) none repeat scroll 0 0;
+  height: 100%;
+  padding: 30px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+  width: 340px;
+  z-index: 9999;
+  overflow-y: auto;
+  @include prefixed(transform, translateX(-100%));
+  
+  &.active {
+    @include prefixed(transform, translateX(0));
+    z-index: 99999;
+  }
+}
+
+.close-icon {
+  margin-top: -16px;
+  text-align: right;
+}
+
+.close-icon>button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  color: $global-color;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0;
+}
+
+.offcanvas-overly {
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  &.active {
+    opacity: .5;
+    visibility: visible;
+  }
+}

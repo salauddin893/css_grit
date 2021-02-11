@@ -1,0 +1,87 @@
+/*----------------------------------------*/
+/* pta Section Area
+/*----------------------------------------*/
+.pta-area{
+    overflow: hidden;
+    @include gradient($btn-gr);
+    padding: 40px 0;
+    .pta-check{
+        .pta-box{
+            justify-content: space-between;
+            h3{
+                width: 100%;
+                line-height: 32px;
+                margin-top: -9px;
+                margin-bottom: -5px;
+                text-align: center;
+                @include md{
+                    text-align: left;
+                    width: 90%;
+                }
+            }
+        }
+        .pta-btn{
+            text-align: center;
+            a{
+                span{
+                    display: inline-block;
+                    transform: translate(10px, 1px);
+                }
+            }
+            @include md{
+                text-align: right;
+            }
+        }
+    }  
+}
+
+/*----------------------------------------*/
+/* pta Section Area 2
+/*----------------------------------------*/
+.pta-area-2{
+    @include gradient($blue-gr-2);
+}
+
+/*----------------------------------------*/
+/* pta Section Area 3
+/*----------------------------------------*/
+.pta-area-3{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+
+    &::after{
+        @include absolute(top 0 left 0);
+        content: "";
+        @include size(100%);
+        background-color: #000;
+        opacity: .6;
+        z-index: -1;
+    }
+    .pta-box{
+        h3{
+            width: 100% !important;
+            line-height: 36px !important;
+            text-align: center !important;
+            margin-top: -7px !important;
+            margin-bottom: -7px !important;
+            @include md{
+                line-height: 1.5 !important;
+                margin-top: -13px !important;
+            }
+            @include lg{
+                width: 65% !important;
+                line-height: 1.5 !important;
+                text-align: left !important;
+            }
+        }
+        .pta-btn{
+            align-self: center;
+            text-align: center;
+            a{
+                display: inline-block;
+            }
+        }
+    }
+}

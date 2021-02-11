@@ -1,0 +1,5 @@
+
+.shadow-sm{
+  @include shadow($y: 3px, $b: 6px, $color: #000000, $opacity: 0.29);
+}
+

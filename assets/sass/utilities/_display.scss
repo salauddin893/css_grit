@@ -1,0 +1,17 @@
+/*--
+    - Display
+-----------------------------------------*/
+.d-none{
+    display: none !important;
+}
+
+@include display(block);
+// @include display(inline-block);
+@include display(flex);
+
+//Responsive Display
+// @include display-rs(md, block);
+@include display-rs(lg, block);
+@include display-rs(md, flex);
+@include display-rs(lg, flex);
+// @include display-rs(xl, flex);

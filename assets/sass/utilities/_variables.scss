@@ -1,0 +1,123 @@
+$container-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1200px,
+) !default;
+
+// Responsive Variables
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1200px) !default;
+
+$columns: 12 !default;
+$gutter-width: 30px;
+
+// Font Family
+$roboto: 'Roboto', sans-serif;
+$work-sans: 'Work Sans', sans-serif;
+$popins: 'Poppins', sans-serif;;
+
+$font: $roboto;
+$heading: $work-sans;
+
+//Heading H1 Responsive Font Size
+$min_width: 320px;
+$max_width: 1200px;
+$h1_min_font: 32px;
+$h1_max_font: 50px;
+
+//Heading H2 Responsive Font Size
+$h2_min_font: 30px;
+$h2_max_font: 40px;
+
+//Heading H3 Responsive Font Size
+$h3_min_font: 18px;
+$h3_max_font: 28px;
+
+//Heading H3 Responsive Font Size
+$h4_min_font: 16px;
+$h4_max_font: 18px;
+
+// Global Font Size 
+$global-font-size: 16px;
+
+// Global Color
+$global-color: #303030;
+$theme-color: #925afa;
+// Colors ---------------
+$black: #000000;
+$white: #fff;
+$gray: #f6f6f6;
+$red: #FD256C;
+$red-ling: #ffe8e8;
+$blue: #0089D0;
+$blue-2: #8d55fd;
+$yellow: #F99D1C;
+
+// Brand Color 
+$fb: #3b5998;
+// $twitter: #1da1f2;
+// $linkedin: #0077b5;
+// $pin: #bd081c;
+// $youtube: #FF0000;
+// $insta: #BB00F2;
+// $snapchat: #FDAC33;
+
+// Gradient Color 
+$btn-gr: to left, #905BF4  0%, #FAC3C8 100%;
+$btn-gr-2: to right, #905BF4  0%, #FAC3C8 100%;
+$blue-gr-2: to left, #8d59fc  0%, #95adfa 100%;
+$contact-gr: to left, #c599ed  0%, #c599ed 100%;
+$red-gr: to top left, #FAC3C8  0%, #fc6f6f 100%;
+$blue-gr: to top left, #0ddecc  0%, #1cc5dc 100%;
+$skill-gr: to left, #befff3  0%, #8f5bfc 100%; 
+$portfolio-gr: to top, #7f77db  0%, #d3888f 100%;
+$price-btn-gr: to left, #9f7ffb 0%, #e9b9fe 100%;
+$servise-2-gr: to top left, #ffedf6 0%, #ffffff 60%;
+// $red-gr: #fd256c 0%, #fd6533 100%;
+// $orange-red-gr: #fd6533 0%, #fd256c 100%;
+// $red-orange-gr: #fd256c 0%, #fd6533 100%;
+// $red-orange2-gr: #F10000 0%, #FDB525 100%;
+// $pink-gr: #FD256C 0%, #B433FD 100%;
+// $red-pink-gr: #F10000 0%,#B433FD 100%;
+// $sky-pink-gr: $sky 0%, $pink 100%;
+// $green-gr: #08AEEA 0%, #2AF598 100%;
+// $blue-gr: #9a79fb 0%, #5468ef 100%;
+// $blue-green-gr: #2F00F1 0%,#33FD84 100%;
+// $green-blue-gr: #33FDB1 0%,#096CCF 100%;
+// $green-gr: #00F181 0%,#00953C 100%;
+
+
+// Browser Prefixes - Which CSS prefixes should be used?
+$webkit: true !default;
+$moz: false !default;
+$ms: false !default;
+$o: false !default;
+
+// Responsive Variables
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  desktop: 1367px) !default;
+
+$desktop: '(min-width: 1367px)';
+$xl:'(min-width: 1200px)';
+$lg:'(min-width: 992px)';
+$md:'(min-width: 768px)';
+$sm: '(min-width: 576px)';
+$mobile: '(max-width: 576)';
+$xs: '(max-width: 767px)';
+
+// $laptop: 'only screen and (min-width: 1200px) and (max-width: 1500px)';
+// $lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+// $md:'only screen and (min-width: 768px) and (max-width: 991px)';
+// $sm: 'only screen and (min-width: 576px) and (max-width: 767px)';

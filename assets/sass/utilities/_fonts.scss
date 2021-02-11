@@ -1,0 +1,57 @@
+/*--
+    - Font Family
+-----------------------------------------*/
+.font-roboto {
+    font-family: $roboto;
+}
+.font-work {
+    font-family: $work-sans;
+}
+
+.font-popins {
+    font-family: $popins;
+}
+/*--
+    - Font Weight
+-----------------------------------------*/
+.font-300 {
+    font-weight: 300;
+}
+
+.font-light {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+// .font-semi-bold {
+//     font-weight: 600;
+// }
+
+.font-bold {
+    font-weight: 700;
+}
+
+/*--
+    - Font Size
+-----------------------------------------*/
+// @include font(16);
+@include font(13);
+@include font(14);
+@include font(15);
+@include font(16);
+@include font(20);
+@include font(22);
+@include font(24);
+@include font(28);
+@include font(30);
+@include font(40);
+@include font(60);
+// @include font(35, md);
+@include font(60, sm);
+@include font(40, md);
+@include font(60, md);
+@include font(40, lg);
+@include font(60, lg);

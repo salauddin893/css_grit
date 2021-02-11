@@ -1,0 +1,18 @@
+/*--
+    - Overlay
+-------------------------------------------*/
+@include overlay(black, $color: $global-color);
+// @include overlay(blue, $color: $navy-blue);
+
+//Opacity
+// @include overlay-opacity(25, 0.25);
+@include overlay-opacity(35, 0.35);
+// @include overlay-opacity(4, 0.4);
+// @include overlay-opacity(55, 0.55);
+// @include overlay-opacity(60, 0.60);
+// @include overlay-opacity(75, 0.75);
+
+//Overlay mode
+// @include overlay-mode(screen, screen);
+// @include overlay-mode(darken, darken);
+// @include overlay-mode(multiply, multiply);

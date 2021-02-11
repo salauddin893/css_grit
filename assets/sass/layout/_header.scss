@@ -1,0 +1,65 @@
+/*----------------------------------------*/
+/* Header Area
+/*----------------------------------------*/
+.header-area{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    .login-btn{
+        margin-top: -5px;
+        a{
+            display: inline-block;
+            color: $white;
+        }
+    }
+    .header-logo {
+        margin-top: 10px;
+    }
+}
+
+/*----------------------------------------*/
+/* Header Area 2
+/*----------------------------------------*/
+
+.header-area-2{
+    .card{
+        align-self: center;
+        a{
+            margin-left: 20px;
+            color: $white;
+            position: relative;
+        }
+        span.card-noti {
+            width: 20px;
+            display: inline-block;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $theme-color;
+            position: absolute;
+            top: -13px;
+            left: 6px;
+            text-align: center;
+            line-height: 21px;
+            font-size: 12px;
+        }
+    }
+}
+
+
+/*----------------------------------------*/
+/* Header Area 2
+/*----------------------------------------*/
+.blog-header{
+    .card{
+        a{
+            color: $black;
+        }
+    }
+}
+
+
+.blog-single-header{
+    position: relative;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px;
+}

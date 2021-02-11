@@ -1,0 +1,78 @@
+/*--
+    - Margin
+-------------------------------------------*/
+// Margin Top
+@include margin-class(mt, 0);
+@include margin-class(mt, 5);
+@include margin-class(mt, 10);
+@include margin-class(mt, 15);
+@include margin-class(mt, 20);
+@include margin-class(mt, 25);
+@include margin-class(mt, 30);
+@include margin-class(mt, 35);
+@include margin-class(mt, 40);
+@include margin-class(mt, 50);
+@include margin-class(mt, 60);
+@include margin-class(mt, 80);
+@include margin-class(mt, 100);
+@include margin-class(mt, 150);
+
+// Margin Bottom
+// @include margin-class(mb, 0);
+@include margin-class(mb, 5);
+@include margin-class(mb, 10);
+// @include margin-class(mb, 15);
+@include margin-class(mb, 20);
+@include margin-class(mb, 30);
+
+// Margin Left
+@include margin-class(ml, auto);
+// @include margin-class(ml, 0);
+@include margin-class(ml, 10);
+// @include margin-class(ml, 15);
+// @include margin-class(ml, 20);
+@include margin-class(ml, 30);
+
+// Margin Right
+// @include margin-class(mr, 0);
+// @include margin-class(mr, 10);
+// @include margin-class(mr, 15);
+// @include margin-class(mr, 20);
+// @include margin-class(mr, 30);
+
+// Margin Left-Right
+// @include margin-class(mx, 0);
+// @include margin-class(mx, 10);
+// @include margin-class(mx, 15);
+// @include margin-class(mx, 30);
+
+// Margin Top-Bottom
+// @include margin-class(my, 0);
+// @include margin-class(my, 10);
+// @include margin-class(my, 15);
+// @include margin-class(my, 20);
+
+// Margin All
+// @include margin-class(m, 0);
+// @include margin-class(m, auto);
+
+// Margin Top-Bottom Auto
+// @include margin-class(my, auto);
+
+// Margin Left-Right Auto
+// @include margin-class(mx, auto);
+
+// Responsive Margin
+// @include margin-rs(mt, lg, 100);
+@include margin-rs(mt, sm, 0);
+@include margin-rs(mt, md, 0);
+@include margin-rs(mt, md, 30);
+@include margin-rs(mt, xl, 40);
+@include margin-rs(mt, md, 60);
+@include margin-rs(mt, lg, 0);
+@include margin-rs(mt, md, 130);
+@include margin-rs(mt, md, 150);
+
+
+// Responsive Margin Auto
+

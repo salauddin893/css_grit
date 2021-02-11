@@ -1,0 +1,181 @@
+/*----------------------------------------*/
+/* portfolio single Page Section Area
+/*----------------------------------------*/
+.portfolio-single-page.banner-area{
+    position: relative;
+    background-position: center;
+    height: auto;
+    @include md{
+        height: 100vh;
+    }
+    &::after{
+        display: block;
+        @include gradient($portfolio-gr);
+        opacity: .85;
+    }
+    .banner-content{
+        width: 100%;
+        margin-top: 0;
+        padding: 180px 0 200px;
+        @include lg{
+            width: 80%; 
+            margin-top: 50px;
+        }
+        @include xl{
+            width: 50%; 
+        }
+        span{
+            background-color: #FD256C;
+            width: 110px;
+            padding: 0px 10px;
+            color: $white;
+            margin: 0 auto;
+            @include md{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+.portfolio-single-page{
+    .portfolio-single-wrapper{
+        position: relative;
+        margin-top: -80px;
+        background-color: $white;
+        z-index: 99;
+    }
+    .portfolio-single-content{
+        h2{
+            margin-top: -12px;
+        }
+    }
+
+    .portfolio-single-img {
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .portfolio-single-details{
+        .portfolio-img{
+            position: relative;
+            img{
+                display: block;
+            }
+            &::after{
+                @include absolute(top -60px left -50px);
+                content: "";
+                @include size(300px);
+                border-radius: 50%;
+                background-color: #f5f4ff;
+                z-index: -1;
+                display: none;
+
+                @include xl{
+                    display: block;
+                }
+            }
+            &-right{
+                &::after{
+                    left: unset;
+                    right: -50px !important;
+                }
+            }
+        }
+        .portfolio-content{
+            & > span{
+                display: inline-block;
+                width: 30px;
+                height: 2px;
+                background-color: $red;
+                margin-bottom: 10px;
+            }
+            ul{
+                li{
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                    span{
+                        padding-right: 15px;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.portfolio-single-page.pta-area-4{
+    background-color: $theme-color;
+    .pta-socile{
+        text-align: left;
+        margin-bottom: 30px;
+        @include md{
+            text-align: right;
+            margin-bottom: 0px;
+        }
+        a{
+            display: inline-block;
+            @include size(40px);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-left: 10px;
+            margin-top: 20px;
+            color: $white;
+
+            &:nth-child(1) {
+                background-color: #435594;
+            }
+            &:nth-child(2) {
+                background-color: #1f72b0;
+            }
+            &:nth-child(3) {
+                background-color: #bd1223;
+            }
+            &:nth-child(4) {
+                background-color: #349aed;
+            }
+        }
+    }
+}
+
+
+
+.portfolio-page.image-slide{
+    .section-title-center{
+        h2{
+            width: 100%;
+            margin: 0 auto;
+            @include md{
+                width: 60%;
+            }
+        }
+    }
+    .page-btn{
+        justify-content: space-between;
+        align-items: center;
+        .prev-btn{
+            padding-top: 10px;
+            a{
+                color: $black;
+                span{
+                    color: $theme-color;
+                }
+            }
+        }
+        .next-btn{
+            padding-top: 10px;
+            a{
+                color: $black;
+                span{
+                    transform: translateY(2px);
+                    display: inline-block;
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,231 @@
+/*----------------------------------------*/
+/* Banner Section Area
+/*----------------------------------------*/
+.banner-area{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+    z-index: 1;
+    @include md{
+        height: 100vh;
+    }
+    &::after{
+        content: "";
+        @include absolute(top 0 left 0 );
+        @include size(100%);
+        background-color: #3d3152;
+        opacity: .56;
+        z-index: -1;
+    }
+
+    .banner-content{
+        height: auto;
+        text-align: center;
+        @include md {
+            height: 100vh;
+            text-align: left;
+        }
+        h2{
+            line-height: 1.2 !important;
+        }
+        p{
+            width: 100%;
+            @include md{
+                width: 65%; 
+            }
+        }
+    }
+
+    .video-icon {
+        margin: 0 auto;
+        margin-top: 30px;
+        @include md{
+            margin-left: 0;
+        }
+        a{
+            @include size(70px);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include gradient($btn-gr);
+            @include hover{
+                animation: banner-video-icon-anime 3s infinite linear;
+            }
+    
+            img{
+                width: 22px;
+            }
+        }
+    }
+    .banner-form{
+        position: relative;
+        height: 0;
+        z-index: 99;
+        margin-top: 30px;
+        @include md {
+            height: 100vh;
+        }
+
+        .form-wrapp{
+            position: relative;
+        }
+
+        button{
+            @include absolute(top 14px right 5px);
+            padding: 15px 20px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            span{
+                font-size: 8px;
+                display: inline-block;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+.banner{
+    position: relative;
+    .banner-shap {
+        @include absolute(bottom 50px right 5% );
+        animation: skill-shap-animi 10s infinite linear;
+        z-index: 99;
+        display: none;
+        @include sm{
+            display: block;
+        }
+    }
+}
+/*----------------------------------------*/
+/* Banner Section Area 2
+/*----------------------------------------*/
+.banner-area-2{
+    height: 500px;
+    @include md{
+        height: 100vh;
+    }
+    .banner-content{
+        margin-top: 80px;
+        @include sm{
+            margin-top: 50px;
+        }
+        @include md{
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    &::after{
+        background-color: #191025;
+        opacity: 56%;
+    }
+    .banner-video{
+        height: auto;
+        @include md{
+            height: 100vh;
+        }
+    }
+    .video-icon {
+        @include md{
+            margin-left: auto;
+        }
+    }
+    .video-icon a{
+        position: relative;
+        @include size(50px);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $blue-2 !important;
+        z-index: 1;
+        margin-top: 30px;
+
+        &::after{
+            @include absolute(top -15px left -15px);
+            content: "";
+            @include size(80px);
+            background-color: #fff;
+            opacity: .2;
+            z-index: -1;
+            border-radius: 50%;
+        }
+        &:hover::after{
+            animation: video-icon 5s infinite linear;
+        }
+
+        img{
+            width: 20px;
+        }
+    }
+}
+
+@keyframes video-icon{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+/*----------------------------------------*/
+/* Banner Section Area 2
+/*----------------------------------------*/
+.page-banner{
+    &::after{
+        display: none;
+    }
+    .banner-content{
+        margin-top: 150px;
+        @include md{
+            margin-top: 0;
+        }
+    }
+}
+
+.page-banner-2{
+    background-position: left;
+    height: 450px;
+    @include xl{
+        height: 500px;
+    }
+    &::after{
+        display: none;
+    }
+    .banner-content{
+        margin-top: 0;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include lg{
+            margin-top: 15px;
+        }
+    }
+}
+
+@keyframes banner-video-icon-anime{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

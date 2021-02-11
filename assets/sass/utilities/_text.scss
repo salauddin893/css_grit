@@ -1,0 +1,14 @@
+// Responsive Alignment
+@include text-align(left);
+@include text-align(center);
+@include text-align(right);
+
+@include text-align(left, md);
+@include text-align(right, md);
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}

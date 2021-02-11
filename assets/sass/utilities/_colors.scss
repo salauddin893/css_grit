@@ -1,0 +1,31 @@
+/*--------------------------------------
+	- Color
+----------------------------------------*/
+.color {
+  color: $global-color;
+}
+
+@include color(black, $black);
+@include color(white, $white);
+// @include color(blue, $blue);
+// @include color(yellow, $yellow);
+
+.white{
+  color: $white !important;
+}
+.black{
+  color: $black !important;
+}
+
+/*--
+    - Brand color
+-----------------------------------------*/
+// @include color(fb, $fb);
+// @include color(twitter, $twitter);
+// @include color(linkedin, $linkedin);
+// @include color(youtube, $youtube);
+
+/*--
+    - Gradient color
+-----------------------------------------*/
+// @include gr-class(red-gr, to right, $red-gr);

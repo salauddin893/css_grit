@@ -1,0 +1,65 @@
+/*----------------------------------------*/
+/* Service Page Section Area
+/*----------------------------------------*/
+.cases-page{
+    .cases-box{
+        &:not(:first-child) {
+            margin-top: 60px;
+            @include xl{
+                margin-top: 95px;
+            }
+        }
+        &:last-child{
+            margin-bottom: 0px;
+            @include xl{
+                margin-bottom: 40px;
+            }
+        }
+        &-1{
+            background-color: #ffeff8; 
+        }
+        &-2{
+            background-color: #effcff; 
+        }
+        &-3{
+            background-color: #eff2ff; 
+        }
+        &-4{
+            background-color: #faf6ff; 
+        }
+        &-5{
+            background-color: #faf6ff; 
+        }
+        &:hover .cases-img img{
+            transform: scale(1.1);
+        }
+    }
+    .cases-img{
+        transform: scale(1);
+        margin-left: 0px;
+        overflow: hidden;
+
+        @include xl{
+            transform: scale(1.15);
+            margin-left: 85px;
+        }
+        img{
+            display: block;
+            width: 100%;
+            transition: .3s;
+            @include xl{
+                width: auto;
+            }
+        }
+    }
+    .cases-content{
+        padding: 15px;
+        @include md{
+            padding: 40px; 
+        }
+        @include lg{
+            padding: 80px 40px 80px 0px;
+            margin-left: -5px;
+        }
+    }
+}

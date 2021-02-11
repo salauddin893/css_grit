@@ -1,0 +1,29 @@
+// Responsive Position 
+.relative {
+  @include relative();
+}
+
+.absolute {
+  @include absolute();
+}
+
+// Position Top
+@include trbl(top, 0);
+
+// Position Right
+@include trbl(right, 0);
+
+// Position Bottom
+@include trbl(bottom, 0);
+
+// Position Left
+@include trbl(left, 0);
+
+//inset Position
+// @include position-align(center, absolute);
+@include position-align(tl-center, absolute);
+// @include position-align(tr-center, absolute);
+// @include position-align(top-right, absolute);
+// @include position-align(bl-center, absolute);
+// @include position-align(bottom-left, absolute);
+// @include position-align(bottom-right, absolute);

@@ -1,0 +1,89 @@
+/*----------------------------------------*/
+/* Video Section Area
+/*----------------------------------------*/
+.video-area{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+    overflow: hidden;
+    &::after{
+        content: "";
+        @include absolute(top 0 left 0);
+        @include size(100%);
+        background-color: #140c25;
+        opacity: 52%;
+        z-index: -1;
+    }
+    .video-content{
+        position: relative;
+        z-index: 9;
+        margin-bottom: -4px;
+        h2{
+            margin-top: -9px;
+            @include md{
+                margin-top: -11px;
+            }
+        }
+        p{
+            width: 100%;
+            @include lg{
+                width: 85%; 
+            }
+        }
+    }
+    .video-icon{
+        height: auto;
+        @include md{
+            height: 100%;
+        }
+        a{
+            @include size(50px);
+            @include hover{
+                animation: video-icon-anime 3s infinite linear;
+            }
+            @include md{
+                @include size(70px); 
+            }
+            @include xl{
+                @include size(100px); 
+            }
+            background-color: rgba(117, 76, 202, .7);
+            border-radius: 50%;
+            img{
+                width: 20px;
+                @include md{
+                    width: 25px;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------*/
+/* Video Section Area
+/*----------------------------------------*/
+
+.video-area-2{
+    &::after{
+        background-color: #140c25;
+    }
+    .video-shap{
+        @include absolute(top 53% left 5%);
+        width: 200px;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+}
+
+@keyframes video-icon-anime{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,45 @@
+/*----------------------------------------*/
+/* Contact Section Area
+/*----------------------------------------*/
+.contact-area{
+    @include gradient($btn-gr);
+    overflow: hidden;
+    .contact-form{
+        h2{
+            margin-top: -9px;
+            @include md{
+                margin-top: -11px;
+            }
+        }
+        .form-input{
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+            &::-webkit-input-placeholder{
+                color: $white;
+            }
+        }
+    }
+    .contact-news{
+        background-color: #b27ce6;
+        margin-left: 0;
+        @include xl{
+            margin-left: 60px;
+        }
+        p{
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        a{
+            margin-top: 30px;
+            display: inline-block;
+            color: $white;
+            span{
+                transform: translateY(1px);
+                display: inline-block;
+                padding-left: 3px;
+            }
+        }
+    }
+}

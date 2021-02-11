@@ -1,0 +1,219 @@
+/*----------------------------------------*/
+/* Footer Area
+/*----------------------------------------*/
+.footer-area{
+  background-color: #f2f2fd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .section-title-center{
+    h2{
+      margin-top: -8px;
+    }
+  }
+  .footer-socile-link a{
+    display: inline-block;
+    margin-right: 30px;
+    color: #888888;
+    @include hover{
+      color: $red;
+    }
+  }
+  .section-padding{
+    padding: 50px 0 !important;
+  }
+  .footer-logo{
+    p{
+      color: #7b7b7b;
+    }
+  }
+  .footer-site-info{
+    border-top: 1px solid #88888870;
+  }
+}
+.footer-menu{
+  @include nav(block, $fs: 16px, $color: #282828, $fw: 400, $px: 0, $py: 5px, $h-color: $theme-color);
+}
+
+.footer-about{
+  h5{
+    font-family: $roboto;
+    font-weight: 500;
+  }
+}
+
+.footer-subscribe{
+  width: 100%;
+  margin: 0 auto;
+  @include md{
+    width: 48%;
+  }
+  form{
+    position: relative;
+    input{
+      @include form-input($fs: 1rem, $color: $black, $my: 0, $border-color: $white, $radius-size: 50px, $focus: false, $f-border-color: $blue, $bg: $white, $py: 17px);
+    }
+
+    button {
+      border: 1px solid transparent;
+      background: $theme-color;
+      color: $white;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 16px 30px;
+      border-radius: 50px;
+      cursor: pointer;
+      @include absolute(top 0 right 0);
+      @include property;
+
+      @include hover{
+        background: transparent;
+        border-color: $theme-color;
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+
+/*----------------------------------------*/
+/* Footer Area 2
+/*----------------------------------------*/
+.footer-area-2{
+  background: #232323;
+  .footer-subscribe{
+    width: 100%;
+    margin-left: 0;
+
+    @include lg{
+      width: 80%;
+    }
+  }
+  .footer-2-title{
+    a{
+      color: $theme-color;
+    }
+  }
+  .footer-logo{
+    p{
+      width: 74%;
+    }
+  }
+  .footer-socile-link {
+    a{
+      color: $white;
+      @include hover{
+        color: $theme-color;
+      }
+    }
+  }
+  .footer-menu{
+    @include nav(block, $fs: 16px, $color: #fff, $fw: 300, $px: 0, $py: 5px, $h-color: $theme-color);
+    ul{
+      margin-top: 25px;
+      li{
+        a{
+          opacity: 80%;
+        }
+      }
+    }
+  }
+  .footer-2-news{
+    width: 85%;
+  }
+  .footer-about{
+    h5{
+      a{
+        @include hover{
+          color: $theme-color;
+          text-decoration: underline;
+        }
+      }
+    }
+    span{
+      margin-top: 7px;
+      color: $theme-color;
+    }
+  }
+}
+
+
+/*----------------------------------------*/
+/* Footer Area 3
+/*----------------------------------------*/
+.footer-area-3{
+  background-size: 100%;
+  background-position: bottom;
+  background-color: #faf7ff;
+
+  .footer-logo{
+    h4 a{
+      color: $red;
+      font-size: 16px;
+    }
+    p{
+      color: #39436f;
+    }
+  }
+  .footer-menu ul{
+    margin-top: 20px;
+    li{
+      a{
+        color: #39436f;
+        @include hover{
+          color: $theme-color;
+        }
+      }
+    }
+  }
+  .footer-socile-link a{
+    margin-right: 10px;
+    @include size(50px);
+    background-color: #fefdff;
+    color: #e2ddde;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 20px 30px -10px #ceb8f7;
+    @include hover{
+      color: $white;
+      background-color: $theme-color;
+    }
+  }
+  .footer-adress{
+    color: #39436f;
+    width: 80%;
+    h4{
+      a{
+        color: #ff799f;
+      }
+    }
+  }
+  .footer-subscribe{
+    width: 100%;
+    margin-top: 30px;
+    form{
+      input{
+        @include form-input($fs: 1rem, $color: $black, $height:50px, $my: 0, $border-color: $white, $radius-size: 5px, $focus: false, $f-border-color: $blue, $bg: $white);
+      }
+      button {
+        border: none;
+        background: transparent;
+        color: $theme-color;
+        padding: 0;
+        cursor: pointer;
+        @include absolute(top 15px right 10px);
+        @include property;
+  
+        @include hover{
+          background: transparent;
+          border-color: $theme-color;
+          color: $theme-color;
+        }
+      }
+    }
+  }
+  .footer-site-info{
+    border-top-style: dashed;
+  }
+}

@@ -1,0 +1,61 @@
+/*----------------------------------------*/
+/* Count Section Area
+/*----------------------------------------*/
+.count-area{
+    position: relative;
+    .section-title-center{
+        h2{
+            width: 100%;
+            margin: 0 auto;
+            margin-top: -9px;
+            margin-bottom: 15px;
+            @include md{
+                margin-top: -11px;
+            }
+            @include lg{
+                width: 50%;
+            }
+        }
+    }
+    .count-box{
+        position: relative;
+        @include shadow($b: 25px, $color: #CECCCC, $opacity: 38%);
+        background-color: $white;
+        border-radius: 10px;
+    }
+    .count-icon{
+        @include absolute(top -20px left 50%);
+        @include size(50px);
+        border-radius: 50%;
+        transform: translateX(-50%);
+        line-height: 50px;
+        font-size: 22px;
+        span{
+            font-size: 24px;
+        }
+        &-1{
+            background-color: #f4efff;
+            color: $theme-color;
+        }
+        &-2{
+            background-color: #fff3f7;
+            color: $red;
+        }
+        &-3{
+            background-color: #fff3f7;
+            color: $red;
+        }
+        &-4{
+            background-color: #f1fff6;
+            color: #7afda9;
+        }
+    }
+    .count-content{
+        padding-top: 15px;
+    }
+    .count-shap{
+        @include absolute(bottom 100px left 50%);
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}

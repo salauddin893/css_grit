@@ -1,0 +1,156 @@
+/*----------------------------------------*/
+/* Skill Section Area
+/*----------------------------------------*/
+.skill-area{
+    background-color: #f8f2ff;
+    position: relative;
+    overflow: hidden;
+    .skill-img{
+        z-index: 1;
+        width: 100%;
+        @include lg{
+            width: 94%;
+            position: relative;
+            top: 30px;
+            left: 30px;
+            margin-bottom: 30px;
+        }
+        &::after {
+            content: "";
+            @include absolute(top -30px left -30px);
+            @include size(100%, 100%);
+            @include gradient($skill-gr);
+            z-index: -1;
+            display: none;
+            @include lg{
+                display: block;
+            }
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .skill-content{
+        h2{
+            margin-top: 0;
+            @include lg{
+                margin-top: -12px;
+            }
+        }
+    }
+    .skill-bar{
+        p{
+            font-weight: 600;
+            font-style: italic;
+        }
+        .barfiller {
+            height: 3px;
+            background-color: rgba(252, 252, 252, .5) !important;
+            border: none !important;
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+        .fill {
+            height: 3px !important;
+            background-color: #fe6f73 !important;
+        }
+        .barfiller .tip{
+            background-color: transparent;
+            color: #fe6f73;
+            font-size: 18px;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .skill-shap{
+        position: absolute;
+        animation: skill-shap-animi 10s infinite linear;
+
+        &-left{
+            top: 30%;
+            left: 3%;
+            display: none;
+            @include xl{
+                display: block;
+            }
+            &-2{
+                bottom: 100px;
+                left: 3%;
+            }
+        }
+        &-right{
+            right: 3%;
+            &-2{
+                right: 3%;
+                top: 100px;
+            }
+        }
+    }
+}
+
+/*----------------------------------------*/
+/* Skill Section Area 2
+/*----------------------------------------*/
+
+.skill-area-2{
+    .skill-icon{
+       @include size(60px);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: #fff;
+       border-radius: 10px;
+       font-size: 28px;
+       margin: 0 auto;
+       @include lg{
+           margin: unset;
+       }
+
+       &-1{
+        @include gradient($btn-gr);
+       }
+       &-2{
+        @include gradient($red-gr);
+       }
+       &-3{
+        @include gradient($red-gr);
+       }
+       &-4{
+        @include gradient($blue-gr);
+       }
+    }
+    .skill-box{
+        text-align: center;
+        position: relative;
+        z-index: 9;
+        transition: .3s;
+        border-radius: 10px;
+        @include lg{
+            text-align: left;
+        }
+        &:hover{
+            box-shadow: 0 10px 45px 0px rgba(0,0,0,0.29);
+        }
+    }
+    .skill-content{
+        h4{
+            font-family: $roboto;
+        }
+    }
+}
+
+
+@keyframes skill-shap-animi{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

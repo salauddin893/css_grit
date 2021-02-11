@@ -1,0 +1,245 @@
+/*----------------------------------------*/
+/* blog single page
+/*----------------------------------------*/
+.blog-single-page{
+    .single-big-img{
+        img{
+            display: block;
+        }
+    }
+    .blog-single-post{
+        .sub{
+            margin-top: -8px;
+        }
+        & > span{
+            background-color: #fd799e;
+            color: $white;
+            padding: 3px 10px;
+        }
+        .author-info{
+            align-items: flex-end;
+            flex-wrap: wrap;
+            .author-img img{
+                transform: translateY(5px);
+            }
+        }
+        .author-text{
+            margin-left: 10px;
+            color: #858585;
+            .name{
+                font-size: 15px;
+            }
+            .date{
+                font-size: 14px;
+            }
+        }
+        .post-tag{
+            padding-left: 0px;
+            align-self: flex-end;
+            color: #858585;
+            @include md{
+                padding-top: 0;
+                padding-left: 30px;
+            }
+        }
+        .author-right{
+            height: 100%;
+        }
+        .social-link{
+            align-self: flex-end;
+            ul{
+                margin-bottom: 0;
+            }
+            @include lg{
+                margin-left: auto;
+                padding-top: 0;
+                align-self: flex-end;
+            }
+            a{
+                margin-bottom: 0;
+                margin-right: 15px;
+            }
+        }
+        .save-icon{
+            align-self: flex-end;
+            a{
+                color: $global-color;
+                @include hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    .blog-img{
+        img{
+            width: 100%;
+        }
+    }
+    .blog-single-post-pre{
+        position: relative;
+        height: auto;
+        display: block;
+        align-items: center;
+        @include md{
+            height: 322px;
+            display: flex;
+        }
+        .content{
+            position: relative;
+            width: 100%;
+            z-index: 99;
+            background-color: #fd799e;
+            padding: 40px 30px;
+            @include md {
+                width: 80%;
+            }
+            @include md{
+                width: 60%;
+            }
+            @include lg{
+                width: 65%;
+            }
+            @include xl{
+                width: 60%;
+            }
+        }
+        .img{
+            position: relative;
+            img{
+                width: 100%;
+                display: block;
+            }
+            @include md{
+                @include absolute(top 0 right 0);
+            }
+        }
+    }
+    .add-text{
+        border-left: 3px solid #e68c8c;
+        padding-left: 15px;
+    }
+    .post-control{
+        flex-wrap: wrap;
+        .post-shier{
+            h4{
+                font-size: 13px;
+                @include sm{
+                    font-size: 18px;
+                }
+            }
+        }
+        .social-link{
+            margin-left: 10px;
+            margin-top: -8px;
+            @include md{
+                margin-top: -5px;
+            }
+            @include lg{
+                margin-left: 40px;
+                margin-top: -5px;
+            }
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+                        width: 30px;
+                        height: 30px;
+                        background-color: transparent;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 30px;
+                        display: block;
+                        margin-right: 0;
+                        @include sm{
+                            margin-right: 10px;
+                        }
+
+                        @include hover{
+                            background-color: $theme-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .recent-post {
+        width: 100%;
+        border: 1px solid #cccc;
+        padding: 20px;
+        padding-left: 60px;
+        position: relative;
+        @include lg{
+            width: 50%;
+        }
+        span{
+            @include absolute(top 30px left 30px);
+        }
+        a{
+            margin-top: 10px;
+            display: inline-block;
+            color: $global-color;
+
+            @include hover{
+                color: $theme-color;
+                text-decoration: underline;
+            }
+        }
+    }
+    .comments{
+        .comment {
+            padding: 15px;
+            border: 1px solid #cccccc;
+            @include sm{
+                padding-left: 30px;
+                padding-top: 15px;
+            }
+        }
+        .comment-child{
+            margin-left: 30px;
+            @include sm{
+                margin-left: 80px;
+            }
+        }
+        .comment-body{
+            .comment-avater{
+                width: 20%;
+                @include sm {
+                    width: auto;
+                }
+            }
+            .comment-content{
+                width: 80%;
+                padding: 10px 0 10px 25px;
+                span{
+                    font-size: 14px;
+                }
+            }
+            .reply-btn{
+                a{
+                    display: inline-block;
+                    background-color: #eeeeee;
+                    color: $black;
+                    padding: 5px 20px;
+                    border-radius: 10px;
+
+                    @include hover{
+                        background-color:#fd799e;
+                        color: $white;
+                    }
+                }
+            }
+        } 
+    }
+    .commetn-form{
+        .form-input{
+            &:focus{
+                border: 1px solid $theme-color;
+            }
+        }
+        .btn{
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+    }
+}

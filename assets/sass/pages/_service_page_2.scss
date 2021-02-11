@@ -1,0 +1,105 @@
+/*----------------------------------------*/
+/* Service Page Section Area
+/*----------------------------------------*/
+.service-page-2.page-banner-2{
+    &::after{
+        display: block;
+        opacity: .7;
+        background-color: #1b132b;
+    }
+}
+
+.service-page-2.service-area{
+    background-color: #faf8ff;
+    .service-icon{
+        span{
+            @include size(60px);
+            margin-left: 0;
+            text-align: center;
+            border-radius: 10px;
+            line-height: 60px;
+            background: #eadfff;
+            color: $theme-color;
+            margin-bottom: 16px;
+        }
+        &-2 span{
+            background: #ffdfea;
+            color: #ff7ba8 !important;
+        }
+        &-3 span{
+            background: #dffff3;
+            color: #81d9b8 !important;
+        }
+        &-4 span{
+            background: #fef3e2;
+            color: #f8a96e !important;
+        }
+    }
+    .service-btn {
+        margin-bottom: -8px;
+    }
+}
+
+.service-page-2.service-cloud{
+    background-color: transparent;
+    .service-box{
+        @include gradient($servise-2-gr);
+        @include shadow($b: 19px, $color: #D7D7D7, $opacity: 35%);
+        padding: 40px 15px 40px 15px!important;
+        
+        @include xl{
+            padding: 40px 20px 40px 50px !important;
+        }
+        @include hover{
+            @include shadow($y: 10px, $b: 45px, $color: $black, $opacity: 30%);
+        }
+    }
+    .service-icon{
+        span{
+            @include size(70px);
+            line-height: 70px;
+            font-size: 30px;
+            color: $white !important;
+            background: #9990fc;
+            @include shadow($y: 22px, $b: 22px, $color: #B0A9FD, $opacity: 35%);
+        }
+        &-2 span{
+            background: #ff799f !important;
+            @include shadow($y: 18px, $b: 22px, $color: #FEA1BC, $opacity: 35%);
+        }
+        &-3 span{
+            background: #7aefbd !important;
+            @include shadow($y: 22px, $b: 22px, $color: #B2EFD5, $opacity: 35%);
+        }
+        &-4 span{
+            background: #f8a96e !important;
+            @include shadow($y: 18px, $b: 22px, $color: #F0C8A9, $opacity: 35%);
+        }
+    }
+    .service-content{
+        span{
+            color: $theme-color;
+            margin-top: -6px;
+            display: block;
+        }
+    }
+}
+
+
+.service-page-2.pta-area-3{
+    background-position: center;
+    &::after{
+        background-color: #2b292a;
+        opacity: 50%;
+    }
+    .pta-box{
+        h3{
+            width: 100% !important;
+            @include lg{
+                width: 70% !important;
+            }
+        }
+    }
+}
+
+

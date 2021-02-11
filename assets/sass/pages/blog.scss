@@ -1,0 +1,80 @@
+/*----------------------------------------*/
+/* Blog Page Section Area
+/*----------------------------------------*/
+.blog-page.banner-area{
+    height: 250px;
+    background-color: #efedf3;
+    @include md{
+        height: 400px;
+    }
+    &::after{
+        display: none;
+    }
+    .banner-content{
+        height: 250px;
+        padding-top: 50px;
+        @include md{
+            height: 400px;
+            padding-top: 60px;
+        }
+    }
+}
+
+.blog-page{
+    .blog-item{
+        transition: .3s;
+        padding: 20px;
+        border-radius: 10px;
+        &:hover{
+            box-shadow: 0px 0px 20px 10px #dadadacc;
+        }
+        &:hover .blog-img img{
+            transform: scale(1.2) rotate(5deg);
+        }
+    }
+    .blog-img{
+        position: relative;
+        overflow: hidden;
+        transition: .3s;
+        border-radius: 10px;
+        img{
+            width: 100%;
+            transition: .3s;
+        }
+        & > span a{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #fd799e;
+            color: $white;
+            padding: 3px 15px;
+            font-size: 13px;
+        }
+    }
+    .blog-content{
+        margin-top: 20px;
+        @include xl{
+            margin-top: -8px;
+        }
+        a{
+            color: $global-color;
+            @include hover{
+                color: $theme-color;
+                text-decoration: underline;
+            }
+        }
+        .autor-img{
+            padding-top: 5px;
+        }
+        .author-info{
+            color: #858585;
+        }
+        .book-mark{
+            margin-left: auto;
+            align-self: center;
+            a{
+                color: #858585;
+            }
+        }
+    }
+}

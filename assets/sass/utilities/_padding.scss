@@ -1,0 +1,89 @@
+/*--- 
+  Padding 
+-------------------------------------------*/ 
+// .p-0 {
+//   padding: 0 !important;
+// }
+// @include padding-class(p, 10);
+@include padding-class(p, 15);
+// @include padding-class(p, 20);
+
+// Padding Top
+// @include padding-class(pt, 0);
+// @include padding-class(pt, 5);
+// @include padding-class(pt, 10);
+// @include padding-class(pt, 15);
+// @include padding-class(pt, 20);
+@include padding-class(pt, 30);
+@include padding-class(pt, 50);
+@include padding-class(pt, 80);
+
+// Padding Bottom
+// @include padding-class(pb, 0);
+// @include padding-class(pb, 10);
+// @include padding-class(pb, 15);
+// @include padding-class(pb, 30);
+@include padding-class(pb, 50);
+
+
+// Padding Left
+// .pl-0{
+//   padding-left: 0 !important;
+// }
+@include padding-class(pl, 0);
+@include padding-class(pl, 30);
+@include padding-class(pl, 100);
+
+// Padding Right
+@include padding-class(pr, 0);
+// @include padding-class(pr, 10);
+// @include padding-class(pr, 15);
+// @include padding-class(pr, 20);
+
+// Padding Left-Right
+// @include padding-class(px, 10);
+@include padding-class(px, 12);
+@include padding-class(px, 15);
+@include padding-class(px, 20);
+@include padding-class(px, 30);
+@include padding-class(px, 40);
+@include padding-class(px, 50);
+
+
+// Padding Top-Bottom
+// @include padding-class(py, 15);
+@include padding-class(py, 30);
+@include padding-class(py, 40);
+@include padding-class(py, 50);
+@include padding-class(py, 70);
+@include padding-class(py, 100);
+
+// Responsive padding Medium Device
+// @include padding-rs(pt, md, 10);
+@include padding-rs(px, lg, 40);
+@include padding-rs(px, xl, 60);
+@include padding-rs(py, lg, 100);
+@include padding-rs(py, xl, 100);
+// @include padding-rs(pr, xl, 0);
+@include padding-rs(pl, md, 0);
+@include padding-rs(pl, lg, 0);
+@include padding-rs(pl, lg, 30);
+@include padding-rs(pl, lg, 100);
+@include padding-rs(pl, lg, 50);
+@include padding-rs(pl, xl, 100);
+@include padding-rs(pl, md, 30);
+@include padding-rs(pl, md, 80);
+@include padding-rs(pl, lg, 80);
+@include padding-rs(pl, xl, 80);
+@include padding-rs(pl, md, 100);
+@include padding-rs(p, md, 40);
+@include padding-rs(p, md, 50);
+@include padding-rs(p, lg, 50);
+@include padding-rs(pt, lg, 80);
+@include padding-rs(pt, md, 0);
+@include padding-rs(pt, md, 100);
+@include padding-rs(pt, lg, 70);
+@include padding-rs(pt, xl, 100);
+@include padding-rs(pb, md, 100);
+@include padding-rs(pb, lg, 70);
+@include padding-rs(pb, xl, 100);

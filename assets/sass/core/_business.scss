@@ -1,0 +1,32 @@
+/*----------------------------------------*/
+/* Business Section Area
+/*----------------------------------------*/
+.business-area{
+    background-color: #ffeff8;
+    .business-content{
+        @include lg{
+            padding-right: 50px;
+        }
+        @include xl{
+            padding-right: 100px;
+        }
+        h2{
+            margin-top: -9px;
+            @include md{
+                margin-top: -12px;
+            }
+            span{
+                color: $theme-color;
+            }
+        }
+    }
+    .business-img{
+        margin-left: auto;
+        border-radius: 5px;
+        img{
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}

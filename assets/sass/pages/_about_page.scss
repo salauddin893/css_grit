@@ -1,0 +1,31 @@
+/*----------------------------------------*/
+/* About Page Banner Section Area
+/*----------------------------------------*/
+.about-page{
+    .about-content{
+        h2{
+            margin-top: -9px;
+            @include md{
+                margin-top: -11px;
+            }
+        }
+    }
+    .manager-content{
+        h2{
+            margin-top: -12px !important;
+        }
+    }
+    .manager-img{
+        top: 0;
+        margin-bottom: 0;
+        &::after{
+            display: none;
+        }
+    }
+}
+
+.about-big-img{
+    img{
+        display: block;
+    }
+}

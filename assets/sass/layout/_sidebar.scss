@@ -1,0 +1,113 @@
+/*----------------------------------------*/
+/* sidebar Area
+/*----------------------------------------*/
+.sidebar{
+    .search-form{
+        margin-top: -10px;
+    }
+    .slide-item{
+        position: relative;
+        & > a{
+            @include absolute(top 50% left 50%);
+            transform: translate(-50%, -50%);
+            color: $white;
+        }
+        & > p{
+            @include absolute(bottom 20px left 50%);
+            width: 90%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+    }
+    .cat-list{
+        ul{
+            li{
+                margin-top: 5px;
+                a{
+                    color: #5e5e5e;
+                    @include hover{
+                        margin-left: 10px;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .img-slide-2{
+        .slide-content {
+            @include absolute(bottom 20px left 20px);
+            width: 100%;
+            a{
+                color: $white;
+                display: block;
+            }
+            p{
+                color: $white;
+                font-size: 14px;
+                border-bottom: 1px solid $white;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .featured-img{
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    .featured-content{
+        a{
+            font-weight: 700;
+            color: $black;
+            @include hover{
+                color: $theme-color;
+                text-decoration: underline;
+            }
+        }
+        span{
+            font-size: 13px;
+            border-bottom: 1px solid $black;
+        }
+    }
+
+    .archive-post{
+        width: 100%;
+        @include lg{
+            width: 80%;
+        }
+        @include xl{
+            width: 50%; 
+        }
+        ul{
+            li{
+                a{
+                    padding: 10px 0;
+                    display: block;
+                    color: $black;
+                    border-bottom: 1px solid #cccccc;
+
+                    @include hover{
+                        margin-left: 10px;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .social{
+        width: 100%;
+        @include lg{
+            width: 90%;
+        }
+        @include xl{
+            width: 70%; 
+        }
+        border-bottom: 1px solid #cccccc;
+        .social-link{
+            margin-top: 10px;
+        }
+    }
+}

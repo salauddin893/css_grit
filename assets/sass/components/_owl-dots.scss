@@ -1,0 +1,25 @@
+// One OWl Carusel Dots 
+.owl-dots {
+  @include owl-dots($width: 80px, $height:5px, $radius-size: none, $bg: #e2d5fd, $active: true, $a-bg: $theme-color, $m-value: 0);
+  position: relative;
+  margin-bottom: -5px;
+
+  @include sm{
+    @include owl-dots($width: 150px, $height:5px, $radius-size: none, $bg: #e2d5fd, $active: true, $a-bg: $theme-color, $m-value: 0);
+    position: relative;
+  }
+}
+
+.portfolio-page.image-slide{
+  .owl-dots {
+    @include owl-dots($width: 15px, $height:15px, $radius-size: 50%, $bg: transparent, $active: true, $a-bg: transparent, $border: 4px solid #e8dff9, $a-border: 4px solid $theme-color);
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+.sidebar .img-slide{
+  .owl-dots{
+    @include owl-dots($width: 8px, $height:8px, $radius-size: 50%, $bg: #e8dff9, $active: true, $a-bg: #e68c8c, $dots-position: left 20px top -40px, $m-value: 5);
+  }
+}

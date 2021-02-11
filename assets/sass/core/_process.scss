@@ -1,0 +1,45 @@
+/*----------------------------------------*/
+/* Banner Section Area
+/*----------------------------------------*/
+.process-area{
+    background-color: $blue-2;
+    .process-content{
+        h2{
+            margin-top: -8px;
+            @include md{
+                margin-top: -11px;
+            }
+        }
+    }
+    .process-item{
+        span{
+            @include size(100%);
+            text-align: center;
+            line-height: 200px;
+            color: $white;
+            display: inline-block;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        &-1 span{
+            background-color: #ef87fe;
+        }
+        &-2 span{
+            background-color: #00d7cf;
+        }
+        &-3 span{
+            background-color: #f1b76e;
+        }
+        &-4 span{
+            background-color: #58c5fe;
+        }
+        p{
+            text-align: center;
+            margin-bottom: -8px;
+        }
+    }
+    .process-img{
+        display: flex;
+        justify-content: center;
+    }
+}

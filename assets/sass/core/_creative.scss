@@ -1,0 +1,37 @@
+/*----------------------------------------*/
+/* creative Area
+/*----------------------------------------*/
+.creative-area{
+    .creative-img{
+        position: relative;
+        margin-top: 0px;
+        z-index: 999;
+        margin-top: 0px;
+        @include xl{
+            margin-top: 30px;
+            outline: 10px solid #f3eff7;
+        }
+        @include lg{
+            margin-top: -135px;
+        }
+        @include xl{
+            margin-top: -150px;
+        }
+
+        &::after{
+            content: "";
+            @include absolute(top -30px left -30px);
+            @include size(100%);
+            @include gradient($skill-gr);
+            z-index: -3;
+            display: none;
+            @include xl{
+                display: block;
+            }
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+}

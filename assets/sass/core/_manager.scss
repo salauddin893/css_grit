@@ -1,0 +1,86 @@
+/*----------------------------------------*/
+/* Manager Section Area
+/*----------------------------------------*/
+.manager-area{
+    overflow: hidden;
+    .manager-content{
+        span{
+            color: $red;
+            margin-top: -7px;
+            display: block;
+        }
+        ul{
+            li{
+                margin-bottom: 25px;
+                opacity: 80%;
+                p{
+                    display: flex;
+                    span{
+                        transform: translateY(6px);
+                        display: inline-block;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .manager-img{
+        position: relative;
+        z-index: 1;
+        top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+        margin-left: auto;
+        @include lg{
+            width: 94%;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+        &::after{
+            content: "";
+            @include absolute(top -50px left 0);
+            @include size(100%);
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            z-index: -1;
+        }
+        span{
+            @include absolute(top -25px left 20px);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $red;
+            &:nth-child(2){
+                @include absolute(top -25px left 40px);
+                background-color: #8d55fd;
+            }
+            &:nth-child(3){
+                @include absolute(top -25px left 60px);
+                background-color: #61e063;
+            }
+        }
+    }
+}
+
+
+/*----------------------------------------*/
+/* Manager Section 2 Area
+/*----------------------------------------*/
+.manager-area-2{
+    .manager-content{
+        span{
+            color: $theme-color;
+            font-weight: 500;
+        }
+        ul{
+            li{
+                opacity: 1;
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}

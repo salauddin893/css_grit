@@ -1,0 +1,7 @@
+// Homepage One OWl Carusel Navigation 
+.sidebar .img-slide{
+    @include owl-nav($position: top -30px right 0, $border: none, $lh: 0, $width: 0, $height: 0, $owl-prev-right: 40px, $owl-next-right: 10px);
+    .owl-nav{
+        margin-right: 30px;
+    }
+}

@@ -1,0 +1,82 @@
+/*----------------------------------------*/
+/* Service Page Section Area
+/*----------------------------------------*/
+.service-page.service-area{
+    .section-title-center{
+        width: 100%;
+        margin: 0 auto;
+        @include md{
+            width: 55%;
+        }
+    }
+}
+
+.service-page.manager-area{
+    .manager-content{
+        h2{
+            margin-top: -9px;
+            @include md{
+                margin-top: -11px;
+            }
+        }
+        ul{
+            li{
+                opacity: 1;
+                span{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    .manager-btn {
+        margin-bottom: -8px;
+    }
+}
+
+.service-page.service-area-2{
+    .section-title-center{
+        h4{
+            margin-top: -6px;
+        }
+    }
+    .service-wrapper{
+        position: relative;
+    }
+    .service-icon{
+        span{
+            @include size(90px);
+            background: transparent !important;
+            color: #382c4d;
+            border: 1px solid #cccccc;
+            line-height: 90px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+    .service-content{
+        margin-top: 30px;
+    }
+    .service-shap-left{
+        @include absolute(top 65px left 265px);
+        display: none;
+        @include xl{
+            display: block
+        }
+    }
+
+    .service-shap-right{
+        @include absolute(top 10px right 265px);
+        display: none;
+        @include xl{
+            display: block
+        }
+    }
+}
+
+.service-page.video-area{
+    .video-icon{
+        a{
+            background-color: rgba(240, 70, 70, 0.7);
+        }
+    }
+}

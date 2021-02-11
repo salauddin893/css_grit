@@ -1,0 +1,122 @@
+/*----------------------------------------*/
+/*  Grid Layout
+/*----------------------------------------*/
+@include container();
+// @include container-fluid();
+@include row();
+
+// Remove the negative margin from default .row, then the horizontal padding
+// from all immediate children columns (to prevent runaway style inheritance).
+// .no-gutters {
+//   margin-right: 0;
+//   margin-left: 0;
+
+//   >.col,
+//   >[class*="col-"],
+//   >[class*="cell"],
+//   >[class*="column"] {
+//     padding-right: 0;
+//     padding-left: 0;
+//   }
+// }
+
+// Extra small screen / phone
+// .col-1 {
+//   @include col-ready();
+//   @include column(1);
+// }
+
+// .col-2 {
+//   @include col-ready();
+//   @include column(2);
+// }
+
+// .col-3 {
+//   @include col-ready();
+//   @include column(3);
+// }
+
+// .col-4 {
+//   @include col-ready();
+//   @include column(4);
+// }
+
+// .col-6 {
+//   @include col-ready();
+//   @include column(6);
+// }
+
+// .col-7 {
+//   @include col-ready();
+//   @include column(7);
+// }
+
+// .col-8 {
+//   @include col-ready();
+//   @include column(8);
+// }
+
+// .col-9 {
+//   @include col-ready();
+//   @include column(9);
+// }
+
+// .col-10 {
+//   @include col-ready();
+//   @include column(10);
+// }
+
+// .col-12 {
+//   @include col-ready();
+// }
+
+// Small screen / phone
+// @include col (col, 1, sm);
+// @include col (col, 3, sm);
+// @include col (col, 6, sm);
+// @include col (col, 8, sm);
+
+// Medium screen / tablet
+// @include col (col, 1, md);
+// @include col (col, 2, md);
+// @include col (col, 3, md);
+// @include col (col, 4, md);
+// @include col (col, 5, md);
+// @include col (col, 6, md);
+// @include col (col, 7, md);
+// @include col (col, 8, md);
+// @include col (col, 9, md);
+// @include col (col, 10, md);
+// @include col (col, 12, md);
+
+// Large screen / desktop
+// @include col (col, 1, lg);
+// @include col (col, 2, lg);
+// @include col (col, 3, lg);
+// @include col (col, 4, lg);
+// @include col (col, 5, lg);
+// @include col (col, 6, lg);
+// @include col (col, 7, lg);
+// @include col (col, 8, lg);
+// @include col (col, 9, lg);
+// @include col (col, 10, lg);
+// @include col (col, 12, lg);
+
+// Extra large screen / wide desktop
+// @include col (col, 2, xl);
+// @include col (col, 3, xl);
+// @include col (col, 4, xl);
+// @include col (col, 6, xl);
+// @include col (col, 7, xl);
+// @include col (col, 8, xl);
+// @include col (col, 5, xl);
+
+// Offset large screen / wide desktop
+// @include offset(offset, 2, xl);
+// @include offset(offset, 5, lg);
+// @include offset(offset, 6, lg);
+
+
+// Offset Extra large screen / wide desktop
+// @include offset(offset, 1, xl);
+// @include offset(offset, 1);
